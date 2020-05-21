@@ -24,5 +24,13 @@ The example is based on Amazon's simple-websockets-chat-app. It has a couple of 
 * sendMessage service will send the message to other people in the same channel
 * to join a channel, you have to explicitly join the channel
 
-[https://github.com/aws-samples/simple-websockets-chat-app]
+AWS repository for simple-websockets-chat-app [https://github.com/aws-samples/simple-websockets-chat-app]
 
+## Getting started
+
+People taking the challenge should try to do it on their own first. Here are the steps to deploy the API. It assumes you have an AWS account.
+
+* make a file named services.zip with the three .js files
+* create a S3 bucket named "chat-artifacts" to upload the zip file
+* upload the zip to chat-artifacts bucket
+* use cloudformation to create and configure the stack
