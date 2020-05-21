@@ -34,3 +34,15 @@ People taking the challenge should try to do it on their own first. Here are the
 * create a S3 bucket named "chat-artifacts" to upload the zip file
 * upload the zip to chat-artifacts bucket
 * use cloudformation to create and configure the stack
+
+### Testing the service
+
+You can use wscat to test the service. Install wscat with npm
+
+npm install -g wscat
+
+{"message":"sendmessage","action":"joinChannel","channel":"testchannel"}
+	
+{"message":"sendmessage","action":"leaveChannel","channel":"testchannel"}
+
+{"message":"sendmessage","data":"a test channel message","channel":"testchannel"}
