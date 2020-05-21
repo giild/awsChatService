@@ -18,6 +18,11 @@ DynamoDB
 
 ## Overview
 
-The example is based on Amazon's simple-websockets-chat-app
-[https://github.com/aws-samples/simple-websockets-chat-app] Github repo
+The example is based on Amazon's simple-websockets-chat-app. It has a couple of improvements and changes to make it more useful for learners. 
+* the template uses a zip file to package the nodejs services
+* it creates a second table for the channels
+* sendMessage service will send the message to other people in the same channel
+* to join a channel, you have to explicitly join the channel
+
+[https://github.com/aws-samples/simple-websockets-chat-app]
 
