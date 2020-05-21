@@ -41,6 +41,12 @@ You can use wscat to test the service. Install wscat with npm
 
 npm install -g wscat
 
+To connect to your service
+
+wscat -c wss://somecode.execute-api.region.amazonaws.com/stage
+
+Open your API stack in AWS API Gateway console
+
 {"message":"sendmessage","action":"joinChannel","channel":"testchannel"}
 	
 {"message":"sendmessage","action":"leaveChannel","channel":"testchannel"}
